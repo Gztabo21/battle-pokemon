@@ -1,0 +1,23 @@
+{
+  "name": "battle-pokemon",
+  "version": "1.0.0",
+  "description": "battle-pokemon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gztabo21/battle-pokemon.git"
+  },
+  "author": "Gustavo Cacharuco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gztabo21/battle-pokemon/issues"
+  },
+  "homepage": "https://github.com/Gztabo21/battle-pokemon#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

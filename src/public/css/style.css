@@ -1,0 +1,81 @@
+*{
+margin:0;
+}
+
+#app{
+    background:#76b852;
+    width: 400px;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 15px;
+    display: block;
+}
+#area-battle{
+    border-radius: 15px;
+    background-color: #3a7bd5;
+    border: #000 solid 2px;
+    padding: 1rem;
+}
+h1, h2{
+    text-align: center;
+}
+#pokemon{
+    text-align: right;
+    color: #fff;
+}
+#oponentPokemon{
+    text-align: left;
+    color: #fff;
+}
+#imgPokemon{
+    margin-left: 70%;
+}
+/* controls */
+#actions{
+    position: relative;
+    margin-left:60%;
+}
+.btn-circle{
+    border-radius: 50px;
+    border: 0px;
+    background-color: red;
+    color :#c9c9c9;
+    width: 50px;
+    font-size: 20px;
+    text-shadow: #c9c9c9;
+    height: 50px;
+}
+#btn-a{
+    margin-top: 20%;
+}
+#move{
+    position: relative;
+    left: 10%;
+}
+#up{
+  position: relative;
+  top:-55px;  
+  left:45px;
+}
+#rigth{
+  position: relative;
+  top:-29px;
+  left:-49px;
+}
+#left{
+    position: relative;
+    top:-29px;
+    left: -95px;
+}
+#pauseAndSelect{
+    position: relative;
+    left:30%;
+    margin-top: 10%;
+}
+#pauseAndSelect button{
+    background-color: #c9c9c9;
+    height: 25px;
+    border-radius: 15px;
+    color:#fff;
+}
