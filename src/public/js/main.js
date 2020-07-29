@@ -8,12 +8,37 @@ async function getPokemon(id){
 }
 
 /*  */
+ function generarNumber(){
+    let random = Math.random()*100;
+    let number = Math.round(random);
+    return number
+}
+
+async function createStats(){
+    let divStats = document.createElement('div');
+    let pointsLife = document.createElement('p');
+     divStats.appendChild(pointsLife.createTextNode('PH'));
+}
+
+async function controls(){
+    document.addEventListener("keydown", (event)=>{
+         if (event.keyCode == 65){
+            console.log(confirmar)
+         } 
+      });
+}
+
+
 
 async function init(){
-    const firstPokemon = await getPokemon(5)
-    const oponentPokemon = await getPokemon(14)
+    //await createStats()
+    const firstPokemon = await getPokemon( generarNumber())
+    const oponentPokemon = await getPokemon( generarNumber())
+    await controls();
+
     window.pokemon.textContent = firstPokemon.name
     window.imgPokemon.setAttribute('src',firstPokemon.sprites.front_default)
+    console.log(firstPokemon);
 
     window.oponentPokemon.textContent = oponentPokemon.name
     window.imgPokemonOponent.setAttribute('src',oponentPokemon.sprites.back_default)

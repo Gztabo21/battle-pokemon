@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>battle pokemon</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/437a5aea05.js"></script>
 </head>
 <body>
     <div id="app">
         <h1>Pokemon battle</h1>
-        <div id="area-battle">
-            <p id="pokemon">pokemon</p>
+        <div id="pantalla">
+            <div id="area-battle">
+            
+            <div id="stats">
+                <p id="pokemon">pokemon</p>
+
+            </div>
             <img src=""  id="imgPokemon" alt="pokemon oponente">
             <p id="oponentPokemon">pokemon</p>
             <img src=""  id="imgPokemonOponent" alt="pokemon oponente">
-            <div id="panel" >
-
+            <div id="panel-msg" >
+                
             </div>
         </div>
+    </div>
+        
         <div id="controls">
             <!-- A & B --> 
             <div id="actions" >
@@ -28,17 +37,18 @@
             <!-- move -->
             <div id="move">
                 <button id="up" >up</button>
-                <button id="down" >down</button>
+                <button id="down" ><i class="fas fa-chevron-down"></i></button>
                 <button id="left" >left</button>
                 <button id="rigth" >rigth</button>
             </div>
             <!-- pause & start -->
             <div id="pauseAndSelect">
-                <button>start</button>
-                <button>Select</button>
+                <button class="start">start</button>
+                <button class="select" >Select</button>
             </div>
         </div>
     </div>
 </body>
+
 <script src="./js/main.js"></script>
 </html>
