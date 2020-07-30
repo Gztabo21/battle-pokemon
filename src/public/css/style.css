@@ -1,9 +1,17 @@
 *{
 margin:0;
 }
+body{
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 
 #app{
-    background:#76b852;
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 400px;
     height: 85vh;
     margin: 0 auto;
@@ -19,11 +27,14 @@ margin:0;
     padding: 1em;
 }
 #area-battle{
-    width: 35vw;
+    width: 85%;
     height: 31vh;
     margin: 0 auto;
     border-radius: 15px;
-    background-color: #3a7bd5;
+    background-image: url('../resource/img/Campo_de_batalla_DPPt_1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-color: #3a7bd5; */
     border: #000 solid 2px;
     padding: 1rem;
 }
@@ -35,14 +46,25 @@ h1, h2{
     text-align: right;
     color: #fff;
 }
+#pokemon::first-letter{
+ text-transform: uppercase;
+}
+#oponente{
+    margin-left: 65%;
+}
+#myPokemon{
+    position: relative;
+    top:-30px
+}
+#oponentPokemon::first-letter{
+    text-transform: uppercase;
+   }
 #oponentPokemon{
     text-align: left;
     color: #fff;
 }
-#imgPokemon{
-    margin-left: 70%;
-    
-}
+
+
 /* controls */
 #actions{
     position: relative;
@@ -76,8 +98,8 @@ h1, h2{
 #rigth{
   position: relative;
   top:-23px;
-  left:-49px;
-  width: 7vw;
+  left:-67px;
+  width: 68px;
   background-color: #c9c9c9;
   border-radius: 15px 0px 0px 15px;
   height: 4vh;
@@ -86,13 +108,18 @@ h1, h2{
     position: relative;
     top:-23px;
     left: -106px;
-    width: 7vw;
+    width: 68px;
+    background-color: #c9c9c9;
     border-radius: 0 15px 15px 0px;
     height: 4vh;
 }
 #down{
+    position: relative;
+    top: 25px;
+    margin-left: 0.8em;
     border-radius: 15px 15px 0   0px;
     height: 8vh;
+    background-color: #c9c9c9;
 }
 #pauseAndSelect{
     position: relative;

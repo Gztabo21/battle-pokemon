@@ -9,7 +9,7 @@ async function getPokemon(id){
 
 /*  */
  function generarNumber(){
-    let random = Math.random()*100;
+    let random = Math.random()*100+1;
     let number = Math.round(random);
     return number
 }
