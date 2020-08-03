@@ -22,6 +22,7 @@ async function createStats(){
 
 async function controls(){
     document.addEventListener("keydown", (event)=>{
+        console.log(event);
          if (event.keyCode == 65){
             console.log(confirmar)
          } 

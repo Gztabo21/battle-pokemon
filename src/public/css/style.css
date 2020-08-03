@@ -9,6 +9,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 }
 :root{
     --btn-gris:#c9c9c9;
+    --verde:#56ab2f;
 }
 
 #app{
@@ -160,4 +161,16 @@ transform: skew(0deg, -16deg);
     position: relative;
     left:-5%;
     top:-80px;
+}
+#statsPokemon{
+    border-radius: 15px 2px;
+    border:4px solid #3b8618;
+    background: #ffd;
+    height: 5vh;
+    width: 130px;
+    padding: 0.25rem;
+}
+#statsPokemon p {
+    text-align: left;
+    color:#000;
 }
